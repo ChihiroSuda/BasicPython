@@ -1,8 +1,3 @@
-a = 1
-print(a)
-b = -6
-c = 9
-
 # TODO
 a =  float(input)
 b =  float(input)
