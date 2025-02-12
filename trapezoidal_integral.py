@@ -1,9 +1,8 @@
-from math import sin
+from math import sin, pi
 # --example--
 # print(sin(0))
 # >>> 0
 # -----------
-PI = 3.141592653589793
 def sin_integral(a, b, N):
     h = (b - a) / N
     integral = 0
@@ -15,7 +14,7 @@ def sin_integral(a, b, N):
     integral *= h / 2
     return integral
 a = 0
-b = PI / 2
+b = pi / 2
 N = 100
 
 result = sin_integral(a, b, N)

@@ -1,6 +1,6 @@
 
 # TODO
-n = int(input)
+n = int(input())
 
 if n < 2:
     print(f"{n}は素数ではありません。")

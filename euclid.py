@@ -1,5 +1,5 @@
-a = input()
-b = input()
+a =  int (input())
+b = int (input())
 
 # TODO
 def gcd(a, b):
