@@ -1,7 +1,7 @@
 # TODO
-a =  float(input)
-b =  float(input)
-c =  float(input)
+a =  float(input())
+b =  float(input())
+c =  float(input())
 D = b**2 - 4*a*c
 if D > 0:
     sqrt_D = D**0.5
