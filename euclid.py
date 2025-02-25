@@ -1,5 +1,5 @@
-a =  int (input())
-b = int (input())
+a =  int (input("aの値を入力："))
+b = int (input("bの値を入力："))
 
 # TODO
 def gcd(a, b):
