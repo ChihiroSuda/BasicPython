@@ -1,9 +1,10 @@
 
 # TODO
-n = int(input())
+n = int(input("判定したい自然数： "))
 
 if n < 2:
     print(f"{n}は素数ではありません。")
+    exit()
 
 else:
     prime = True
