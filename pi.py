@@ -5,3 +5,8 @@ text = """
 
 # TODO
 
+words = text.lower().replace(".", " ").replace(","," ").split()
+word_lengths = list(map(len, words))
+
+for word, length in zip(words, word_lengths):
+    print(f"{word}:{length}文字")
