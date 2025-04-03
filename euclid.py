@@ -7,6 +7,9 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 
-result = gcd (a, b)
+def coprime(a, b):
+    return gcd(a, b) == 1
 
-print(f"{a}　と {b}　の最大公約数：{result}")
+print(gcd(a, b))
+print(coprime(a, b))
+
