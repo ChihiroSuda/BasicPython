@@ -1,22 +1,21 @@
-from math import sin, pi
+import math
 # --example--
 # print(sin(0))
 # >>> 0
 # -----------
-def sin_integral(a, b, N):
-    h = (b - a) / N
-    integral = 0
+def sin_integral(f, a=0, b=1, n=100):
+    h = (b - a) / n
+    integral = 0.5 * (f(a) + f(b))
 
-    for k in range (1, N + 1):
-        x_k_1 = a + (k - 1) * h
-        x_k = a + k * h
-        integral += sin(x_k_1) + sin(x_k)
-    integral *= h / 2
-    return integral
-a = 0
-b = pi / 2
-N = 100
+    for i in range (1, n):
+        x = a + i * h
+        integral += f(x)
 
-result = sin_integral(a, b, N)
+    return integral * h
 
-print(f"台数積分法による近似積分値：{result}")
+def func3(x):
+    return math.sqrt(math.pi) * math.exp(-x**2)
+
+
+result3 = sin_integral(func3, -100, 100, 1000)
+print(result3)
